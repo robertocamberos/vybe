@@ -813,7 +813,7 @@ export default function VybeApp() {
               style={styles.buyBtn(true)}
               onMouseOver={(e) => (e.currentTarget.style.transform = "scale(1.02)")}
               onMouseOut={(e) => (e.currentTarget.style.transform = "scale(1)")}
-              onClick={() => alert("🔗 This is where Stripe Checkout would open!\n\nTo set this up:\n1. Create a Stripe account\n2. Add a $9.99/mo subscription product\n3. Replace this with Stripe Checkout redirect")}
+              onClick={() => window.open("https://buy.stripe.com/test_7sYaEX4Le56PaKu90G4sE00", "_blank")}
             >
               Upgrade to Pro
             </button>
